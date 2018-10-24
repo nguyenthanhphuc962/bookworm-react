@@ -1,1 +1,2 @@
-export const login = (credentials) => () => api.user.login(credentials).then(res => res.user.data)
+export const login = (credentials) => (dispatch) => 
+    api.user.login(credentials).then(user => dispatch(userLoggedIn(user)));
