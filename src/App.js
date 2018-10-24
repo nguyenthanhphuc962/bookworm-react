@@ -5,8 +5,10 @@ import HomePage from './components/pages/HomePage'
 import LoginPage from './components/pages/LoginPage'
 
 const App = () => <div>
-  <Route path="/" exact component={HomePage} />
-  <Route path="/login" component={LoginPage} />
+    <div className="ui container">
+      <Route path="/" exact component={HomePage} />
+      <Route path="/login" component={LoginPage} />
+    </div>
 </div>
 
 export default App;
